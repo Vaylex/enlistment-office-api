@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/enlistment_office
+    username: postgres
+    password: ggtt1234
+  mail:
+    host: smtp.yandex.ru
+    port: 465
+    username: pgk.danila@yandex.ru
+    password: ipltsohqynwqhcpi
+    properties:
+      mail:
+        debug: false
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            enable: true
+jwt:
+  secret:
+    access: qBTmv4oXFFR2GwjexDJ4t6fsIUIUhhXqlktXjXdkcyygs8nPVEwMfo29VDRRepYDVV5IkIxBMzr7OEHXEHd37w==
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: TRACE
